@@ -29,7 +29,7 @@ page{
 #s{
     background-color:#FCFCFC;
     animation: s 17s infinite;
-    background-image: url("../images/1.jpg");
+
     background-size:400px 600px;
     background-repeat:no-repeat;
     background-position: center center;
