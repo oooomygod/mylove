@@ -6,26 +6,59 @@ html,body,page{
 }
 page{
     height: 100%;
-    font-size: 180px;
+    font-size: 150px;
     position: absolute;/*全屏的设置*/
+    text-align: center;
     padding-top: 30%;
-    padding-left: 30%;
+}
+#q{
+    font-size: 36px;
+    display: block;/*换行*/
+    color: #FF6666;
+    animation: q 17s infinite;
+}
+@keyframes q {
+    0%{opacity: 0}
+    70%{opacity: 0}
+    80%{opacity: 100}
+    90%{opacity:100}
+
+    100%{opacity: 0}
+
 }
 #s{
-    background-color: lightgreen;
-    animation: s 10s infinite;
+    background-color:#FCFCFC;
+    animation: s 17s infinite;
+    background-image: url("../images/1.jpg");
+    background-size:400px 600px;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+
 }
 #l{
-    background-color: #FF6666;
-    animation: l 10s infinite;
+    background-color: #FCFCFC;
+    animation: l 17s infinite;
+    background-image: url("../images/2.jpg");
+    background-size: 400px 600px;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 #z{
-    background-color: burlywood;
-    animation: z 10s infinite;
+    background-color:#FCFCFC;
+    animation: z 17s infinite;
+    background-image: url("../images/3.jpg");
+    background-size: 400px 600px;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 #b{
-    background-color: aliceblue;
-    animation: b 10s infinite;
+    background-color: #FCFCFC;
+    animation: b 17s infinite;
+    background-image: url("../images/5.jpg");
+    background-size: 400px 600px;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 @keyframes s {
     0%{opacity: 0}

@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="Stylesheet" type="text/css" href="css/page.css" />
+<script>
+    function audioAutoPlay(id) {
+        var audio = document.getElementById(id);
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady",function () {
 
+            audio.play();
+        },false)
+        document.addEventListener("YixinJSBridgeReady",function () {
+
+            audio.play();
+        },false)
+
+    }
+</script>
 </head>
 <body>
+<body onload="audioAutoPlay('bgm');">
+<audio id="" src="wav/1.mp3" preload="auto" autoplay="autoplay"></audio>
 <page id="s">是</page>
 <page id="l">李</page>
 <page id="z">足</page>
-<page id="b">兵</page>
+<page id="b">
+    兵
+    <span id="q">李足兵是个球</span>
+</page>
 </body>
 </html>
