@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>表单</title>
+    <style>
+
+        body{
+            font-size:12px;
+            font-family:"宋体";
+        }
+        .bule{
+            border-color:pink;}
+        .font1{
+            color:#666;}
+
+
+    </style>
+
+
+</head>
+
+<body>
+<br>
+<br>
+
+
+
+<table width="800" border="0" align="center">
+    <tr>
+        <td width="80"><b>用户名:</b></td>
+        <td><input type="text" name="name" class="bule"/>
+        </td>
+        </td>
+        <td class="font1">不超过7个汉字，或14个字节（数字，字母和下划线）</td>
+    </tr>
+    <tr>
+        <td><b>密码：  </b></td>
+        <td>
+            <input type="password" name="password1" size="20"class="bule"/></td>
+        <td class="font1">最少6个字符，不超过14个字符（数字，字母和下划线）</td>
+    </tr>
+    <tr>
+        <td><b>确定密码：</b></td>
+        <td colspan="2">
+            <input type="password" name="password11" size="20"class="bule"/>
+        </td>
+    </tr>
+    <tr>
+        <td><b>性别：  </b></td>
+        <td colspan="2">
+            <input type="radio"  name="gender" value="女" checked/>女
+            <input type="radio"  name="gender" value="男"/>男<br><br>
+        </td>
+    </tr>
+    <tr>
+        <td><b>个人爱好：</b></td>
+        <td colspan="2">
+            <input type="checkbox" name="intrest" value="文学"/>文学
+            <input type="checkbox" name="intrest" value="影视"/>影视
+
+            <input type="checkbox" name="intrest" value="体育"/>体育
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>家庭住址:</b></td>
+        <td><input type="text" name="address" class="bule"/></td>
+        <td class="font1">请输入详细的家庭住址，接受活动邮件</td>
+    </tr>
+
+
+
+    <tr>
+        <td><b>验证码：</b></td>
+        <td><input type="text" name="check-img" class="bule"/></td>
+
+    </tr>
+
+
+    <tr>
+        <td colspan="3">
+            <form method="post" action="">是否同意条款内容
+                <input type="radio" name="aggree" value="aggree"/> 我同意
+                <input type="radio" name="aggree" value="disaggree"/> 我不同意<br><br>
+                <textarea name="textarea" cols="100" rows="10" wrap="hard" class="bule">
+    注册这个的人是大笨蛋
+    </textarea>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center"><input type="submit" value="提交"/>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
